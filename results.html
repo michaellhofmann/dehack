@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <title>Evaluation Results</title>
+    <style>
+        /* Apply Arial or a generic sans-serif font to the entire body */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .data {
+            width: 60%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        .data th, .data td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        .data tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        h1, h2, p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Evaluation Results</h1>
+    {{ tables|safe }}
+    <h2>Summary Overview</h2>
+    <p>{{ summary }}</p>
+</body>
+</html>
